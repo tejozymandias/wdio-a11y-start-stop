@@ -4,8 +4,7 @@
   "description": "Sample WebdriverIO testing project",
   "scripts": {
     "test": "wdio run wdio.conf.js",
-    "test:dev": "wdio run wdio.conf.js --watch",
-    "bstack": "npx wdio run wdio.conf.js --spec ./test/specs/bstackLogin.spec.js"
+    "test:dev": "wdio run wdio.conf.js --watch"
   },
   "keywords": [
     "webdriverio",
