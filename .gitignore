@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log
+yarn-error.log
+test/reports/
+.DS_Store
+.env
+.env.local
+.vscode/
+.idea/
+*.log
+wdio-*.log
+.wdio-*
+dist/
+build/
+coverage/
