@@ -5,7 +5,8 @@ describe('BrowserStack Demo Checkout Flow', () => {
         await browser.maximizeWindow();
 
         // Start accessibility scan before interactions
-        // await startA11yScanning()
+        // await startA11yScanning();
+        await browser.startA11yScanning();
         // await browser.accessibilityStart();
         // await browser.execute('browserstack_executor: {"action": "accessibility", "arguments": {"command": "start"}}');
 
@@ -33,6 +34,7 @@ describe('BrowserStack Demo Checkout Flow', () => {
         await loginBtn.click();
 
         // Stop accessibility scan after interactions
+        await browser.stopA11yScanning();
         // await browser.accessibilityStop();
         // await browser.execute('browserstack_executor: {"action": "accessibility", "arguments": {"command": "stop"}}');
 
